@@ -26,13 +26,20 @@ def uppgift1(punkter):
         # Fyll Y
         Y[j, 0] = b_j
 
-        #Minsta kvadratmetoden X = ((A^T )* A)^-1 * (A^T)*Y
-        AT = np.transpose(A)            #transponent A^T
-        ATA = np.matmul(AT, A)          #A^T *A
+    #Minsta kvadratmetoden X = ((A^T )* A)^-1 * (A^T)*Y
+    AT = np.transpose(A)            #transponent A^T
+    ATA = np.matmul(AT, A)          #A^T *A
+
+    det = np.linalg.det(ATA)
+    if det == 0:
+            print("Error: ATA har ingen invers")
+    else:
         inv_ATA = np.linalg.inv(ATA)    #inverterar ()^-1
         ATY = np.matmul(AT, Y)          #A^T *Y
-        
+
         X = np.matmul(inv_ATA, ATY)     #Slutlig minsta kvadratlösning
+
+    return X
 
 #%%
 def upg2(): 
