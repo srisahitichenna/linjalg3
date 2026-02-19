@@ -46,8 +46,6 @@ punkter = upg2()
 X = uppgift1(punkter)
 print("Koefficienterna blev:\n", X)
 
-
-
 a = punkter [:,0] #alla rader i kolumn 0  (x-koordinater)
 b = punkter [:,1] #alla rader i kolumn 1 (y-koordinater)
 
@@ -76,4 +74,3 @@ X = uppgift1(punkter)
 # Skriv ut resultatet
 print("Koefficienterna blev:")
 print(X)
-# %%
