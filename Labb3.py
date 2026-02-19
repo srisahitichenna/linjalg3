@@ -42,7 +42,8 @@ def upg2():
     p = (1 + 2*random) #från 1-2.99?
     return p
 
-uppgift1(upg2())
+X = uppgift1(upg2())
+print("Koefficienterna blev:\n", X)
 
 #%% TEST AV UPPGIFT 1
 punkter = np.array([
