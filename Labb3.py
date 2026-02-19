@@ -26,10 +26,11 @@ def uppgift1(punkter):
         Y[j, 0] = b_j
 
         #Minsta kvadratmetoden X = ((A^T )* A)^-1 * (A^T)*Y
-        AT = A.T #transponent
-        ATA = np.matmul(AT, A)
-        inv_ATA = np.linalg.inv(ATA)
-        ATY = np.matmul(AT, Y)
-        X = np.matmul(inv_ATA, ATY)
+        AT = A.T                        #transponent A^T
+        ATA = np.matmul(AT, A)          #A^T *A
+        inv_ATA = np.linalg.inv(ATA)    #inverterar ()^-1
+        ATY = np.matmul(AT, Y)          #A^T *Y
+        
+        X = np.matmul(inv_ATA, ATY)     #Slutlig minsta kvadratlösning
 
 
