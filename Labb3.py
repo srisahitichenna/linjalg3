@@ -25,6 +25,5 @@ def uppgift1(punkter):
         # Fyll Y
         Y[j, 0] = b_j
 
-
-
+        #Minsta kvadratmetoden X = ((A^T )* A)^-1 * (A^T)*Y
 
