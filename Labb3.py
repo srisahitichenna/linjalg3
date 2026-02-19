@@ -33,7 +33,6 @@ def uppgift1(punkter):
         ATY = np.matmul(AT, Y)          #A^T *Y
         
         X = np.matmul(inv_ATA, ATY)     #Slutlig minsta kvadratlösning
-        return X
 
         return X
 
