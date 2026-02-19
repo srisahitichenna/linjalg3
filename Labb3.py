@@ -1,3 +1,4 @@
+#%%
 import numpy as np
 import matplotlib as mpl
 
@@ -27,9 +28,17 @@ def uppgift1(punkter):
 
         #Minsta kvadratmetoden X = ((A^T )* A)^-1 * (A^T)*Y
         AT = A.T #transponent
-        ATA = np.matmul(AT, A)
+        ATA = np.matmul(AT, A) 
         inv_ATA = np.linalg.inv(ATA)
         ATY = np.matmul(AT, Y)
         X = np.matmul(inv_ATA, ATY)
+
+#%%
+def upg2(): 
+    random = np.random.rand(8,2) #skapar 8x2 matris, med tal 0-0.999
+    p = (1 + 2*random) #från 1-2.99?
+    return p
+upg2()
+
 
 
