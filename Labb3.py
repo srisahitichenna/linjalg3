@@ -34,6 +34,8 @@ def uppgift1(punkter):
         
         X = np.matmul(inv_ATA, ATY)     #Slutlig minsta kvadratlösning
 
+        return X
+
 #%%
 def upg2(): 
     random = np.random.rand(8,2) #skapar 8x2 matris, med tal 0-0.999
