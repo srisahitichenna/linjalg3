@@ -27,7 +27,7 @@ def uppgift1(punkter):
         Y[j, 0] = b_j
 
         #Minsta kvadratmetoden X = ((A^T )* A)^-1 * (A^T)*Y
-        AT = A.T                        #transponent A^T
+        AT = np.transpose(A)            #transponent A^T
         ATA = np.matmul(AT, A)          #A^T *A
         inv_ATA = np.linalg.inv(ATA)    #inverterar ()^-1
         ATY = np.matmul(AT, Y)          #A^T *Y
