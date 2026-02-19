@@ -1,6 +1,6 @@
 #%%
 import numpy as np
-import matplotlib as mpl
+import matplotlib.pyplot as plt
 
 def uppgift1(punkter):
     
@@ -62,4 +62,12 @@ X = uppgift1(punkter)
 print("Koefficienterna blev:")
 print(X)
 
+
+a = punkter [:,0] #alla rader i kolumn 0  (x-koordinater)
+b = punkter [:,1] #alla rader i kolumn 1 (y-koordinater)
+
+y = X[0]*a**3 + X[1]*a**2 + X[2]*a + X[3]
+plt.scatter(a,b) #ritar upp punkterna
+plt.plot(a,y) #polynom-approximationen
+plt.show()
 
