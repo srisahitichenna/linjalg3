@@ -2,4 +2,9 @@ import numpy as np
 import matplotlib as mpl
 
 def uppgift1(punkter):
-    pass
+    
+    #Dela upp x och y
+    a = punkter [:, 0]
+    b = punkter [:, 1]
+
+
