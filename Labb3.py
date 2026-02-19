@@ -31,7 +31,7 @@ def uppgift1(punkter):
     ATA = np.matmul(AT, A)          #A^T *A
     inv_ATA = np.linalg.inv(ATA)    #inverterar ()^-1
     ATY = np.matmul(AT, Y)          #A^T *Y
-
+        
     X = np.matmul(inv_ATA, ATY)     #Slutlig minsta kvadratlösning
 
     return X
@@ -44,5 +44,21 @@ def upg2():
 
 uppgift1(upg2())
 
+#%% TEST AV UPPGIFT 1
+punkter = np.array([
+    [1, 2],
+    [2, 3],
+    [3, 5],
+    [4, 4],
+    [5, 6],
+    [6, 7],
+    [7, 10],
+    [8, 12]
+])
+X = uppgift1(punkter)
+
+# Skriv ut resultatet
+print("Koefficienterna blev:")
+print(X)
 
 
