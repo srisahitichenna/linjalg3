@@ -39,7 +39,8 @@ def upg2():
     random = np.random.rand(8,2) #skapar 8x2 matris, med tal 0-0.999
     p = (1 + 2*random) #från 1-2.99?
     return p
-upg2()
+
+uppgift1(upg2())
 
 
 
